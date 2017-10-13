@@ -14,10 +14,10 @@ module Client =
         data.addColumn(ColumnType.StringType,"Year") |> ignore
         data.addColumn(ColumnType.NumberType,"Sales") |> ignore
         data.addColumn(ColumnType.NumberType,"Expenses") |> ignore
-        data.addRows [| ("2004", 1000, 400)
-                        ("2005", 1170, 460)
-                        ("2006", 1660, 1120)
-                        ("2007", 1030, 540) |]
+        data.addRows [| ("2014", 1000, 400)
+                        ("2015", 1170, 460)
+                        ("2016", 1660, 1120)
+                        ("2017", 1030, 540) |]
         |> ignore
         data
 
