@@ -21,7 +21,8 @@ module Client =
         |> ignore
         data
 
-    let Main =
+    [<SPAEntryPoint>]
+    let Main() =
         Div []
         |>! OnAfterRender (fun container ->
             let visualization = new BarChart(container.Dom)
