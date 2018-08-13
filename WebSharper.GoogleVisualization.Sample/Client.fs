@@ -1,8 +1,9 @@
 namespace WebSharper.GoogleVisualization.Sample
 
 open WebSharper
-open WebSharper.JavaScript
-open WebSharper.Html.Client
+open WebSharper.UI
+open WebSharper.UI.Html
+open WebSharper.UI.Client
 open WebSharper.Google.Visualization
 open WebSharper.Google.Visualization.Base
 
@@ -23,14 +24,14 @@ module Client =
 
     [<SPAEntryPoint>]
     let Main() =
-        Div []
-        |>! OnAfterRender (fun container ->
-            let visualization = new BarChart(container.Dom)
-            let options =
-                BarChartOptions(
-                    height = 400,
-                    legend = Legend(position=LegendPosition.Bottom),
-                    title  = "Company Performance")
-            visualization.draw(AreaChartData(), options))
-        |> fun el ->
-            el.AppendTo "main"
+        div [
+            on.afterRender (fun container ->
+                let visualization = new BarChart(container)
+                let options =
+                    BarChartOptions(
+                        height = 400,
+                        legend = Legend(position=LegendPosition.Bottom),
+                        title  = "Company Performance")
+                visualization.draw(AreaChartData(), options))
+        ] []
+        |> Doc.RunById "main"
