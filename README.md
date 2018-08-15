@@ -1,4 +1,5 @@
-# Your First WebSharper Application in 2 Minutes [![Build status](https://ci.appveyor.com/api/projects/status/q3jbsc9mlbue027e?svg=true)](https://ci.appveyor.com/project/Tarmil/websharper-googlevisualization-sample)
+# Your First WebSharper Application in 2 Minutes [![Build status](https://ci.appveyor.com/api/projects/status/1csfcydik0j4afhc?svg=true)](https://ci.appveyor.com/project/IntelliFactory/websharper-googlevisualization-sample)
+
 
 This project contains the "Visualize data with any JS library" sample
 from the [WebSharper website](http://websharper.com).
