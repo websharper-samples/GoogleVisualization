@@ -6,6 +6,8 @@ from the [WebSharper website](http://websharper.com).
 
 ![Screenshot](WebSharper.GoogleVisualization.Sample.png)
 
+See it running live [here.](https://websharper-samples.github.io/GoogleVisualization)
+
 ## Dependencies
 
 This project requires WebSharper and WebSharper.Google.Visualization, and it is configured to fetch these dependencies automatically.
