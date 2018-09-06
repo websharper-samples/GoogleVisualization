@@ -472,7 +472,7 @@ if (!console) {
   data.addColumn("string","Year");
   data.addColumn("number","Sales");
   data.addColumn("number","Expenses");
-  data.addRows([["2004",1000,400],["2005",1170,460],["2006",1660,1120],["2007",1030,540]]);
+  data.addRows([["2014",1000,400],["2015",1170,460],["2016",1660,1120],["2017",1030,540]]);
   return data;
  };
  Operators.FailWith=function(msg)
